@@ -7,7 +7,7 @@ function Table({ createTable, currentNode }) {
       <table>
         {[...Array(currentNode[0] + 1)].map((el, index) => (
           <tr key={index}>
-            {[...Array(currentNode[0] + 1)].map((el1, i1) => (
+            {[...Array(currentNode[1] + 1)].map((el1, i1) => (
               <td>
                 <input />
               </td>
