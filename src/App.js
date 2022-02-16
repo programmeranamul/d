@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="App">
       <div className={!showTableOption && !createTable ? "d-block" : "d-none"}>
-        <button
-          className="btn btn-outline-primary mb-5"
+        <div
+          className="click-icon"
           onClick={() => setShowTableOption(true)}
         >
-          Click Here
-        </button>
+         
+        </div>
       </div>
       <TableOption
         showTableOption={showTableOption}

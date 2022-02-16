@@ -33,7 +33,9 @@ function TableOption({
     <div
       className={showTableOption && !createTable ? "d-block mt-5" : "d-none"}
     >
-      {Array(nodeCount[0])
+      <div className="main-wrapper">
+        <div className="option-wrapper">
+        {Array(nodeCount[0])
         .fill(Array(nodeCount[1]).fill(0)) // 5x5 0 array
         .map((e, i) => (
           <div className="row-node">
@@ -53,8 +55,13 @@ function TableOption({
               ></div>
             ))}
           </div>
+          
         ))}
-        <h3>{(nodeHover[0] + 1)} x  {(nodeHover[1] + 1)}</h3>
+         <h3>{(nodeHover[0] + 1)} x  {(nodeHover[1] + 1)}</h3>
+        </div>
+       
+      </div>
+       
       {/* <h3>selected {(currentNode[0] + 1)} * {(currentNode[1] + 1)} nodes</h3>
       <h3>
         Now coordinates{" "}

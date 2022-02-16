@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -41,3 +40,21 @@
   width: 30px;
   height: 30px;
   margin: 0 1px;}
+
+
+  .click-icon{
+    width: 40px;
+    height: 40px;
+    background-image:url("./Img/download.svg");    
+
+  }
+
+  .main-wrapper{
+    position: relative;
+  }
+  .main-wrapper h3{
+    position: absolute;
+  }
+  .option-wrapper{
+    position: absolute;
+  }
